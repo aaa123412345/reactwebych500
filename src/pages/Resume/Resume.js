@@ -26,8 +26,7 @@ export default class Resume extends Component {
                       <div className="row justify-content-md-around m-1">
                         <address>
                           <strong>Jim Yim</strong><br />
-                          RM 1613<br />
-                          WAH MEI HSE, WAH FU EST HK<br />
+                          Southern District<br />                       
                           Hong Kong<br />
                           Phone: 63604868<br />
                           yim.201314@gmail.com<br/>
