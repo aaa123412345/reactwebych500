@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+	<link href="%PUBLIC_URL%/bootstrap-4.4.1.css" rel="stylesheet">
+	<title>My React Web</title>
+</head>
+
+<style>
+
+
+.parallax {
+  /* The image used */
+  background-image: url("%PUBLIC_URL%/Yim_Jim_or.png");
+
+  /* Set a specific height */
+  min-height: 300px; 
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-fluid{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.jumbotron {
+    margin-bottom: 0px;
+	color: white;
+ }
+
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 667) {
+        document.getElementById('navbar_top').classList.add('sticky');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar_top').classList.remove('sticky');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
+</script>
+
+<body>
+	<div id="root"></div>
+	</script>
+</body>
+
+
+</html>
